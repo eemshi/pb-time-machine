@@ -18,6 +18,7 @@ function App() {
 
   return (
     <div className="App">
+      <div className="landing-bg"></div>
       <div className={isVertical ? "landing vertical" : "landing"}>
         <div className={"landing-left"}>
           <img src="/img/tmhas-logo.png" alt="TMHAS logo"/>
