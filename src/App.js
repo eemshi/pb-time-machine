@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.scss';
+import logo from './img/tmhas-logo.png';
 
 function App() {
   const [isVertical, setIsVertical] = useState(false)
@@ -21,7 +22,7 @@ function App() {
       <div className="landing-bg"></div>
       <div className={isVertical ? "landing vertical" : "landing"}>
         <div className={"landing-left"}>
-          <img src="/img/tmhas-logo.png" alt="TMHAS logo"/>
+          <img src={logo} alt="TMHAS logo"/>
         </div>
         <div className="landing-right">
           <h1>PARTICIPATORY BUDGETING</h1>
