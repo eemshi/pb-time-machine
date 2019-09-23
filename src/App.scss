@@ -1,0 +1,48 @@
+.landing {
+  height: 100vh;
+  background-image: url('/img/small-city.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  color: white;
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+  h1 { margin-bottom: 0.5rem }
+  h2 {
+    color: #fcb733;
+    margin: 0;
+  }
+
+  .landing-left {
+    width: 40%;
+    img {
+      width: 100%;
+    }
+  }
+  .landing-right {
+    width: 60%;
+    padding: 0 4rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    padding: 1rem;
+  }
+  @media screen and (max-width: 1003px) {
+    .landing-left, .landing-right {
+      width: 100%;
+      img {
+        max-width: 500px;
+      }
+    }
+    .landing-right {
+      padding: 0;
+    }
+  }
+
+}
