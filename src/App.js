@@ -38,34 +38,34 @@ function App() {
         <div className="videoRow">
           <Video
             url="https://player.vimeo.com/video/286610881"
-            width="380"
-            height="210"
+            width={380}
+            height={210}
           />
         </div>
 
         <div className="videoRow">
           <Video
             url="https://player.vimeo.com/video/287697245"
-            width="313"
-            height="170"
+            width={313}
+            height={170}
           />
           <Video
             url="https://player.vimeo.com/video/286610881"
-            width="313"
-            height="170"
+            width={313}
+            height={170}
           />
         </div>
 
         <div className="videoRow">
           <Video
             url="https://player.vimeo.com/video/287697245"
-            width="502"
-            height="276"
+            width={502}
+            height={276}
           />
           <Video
             url="https://player.vimeo.com/video/286610881"
-            width="502"
-            height="276"
+            width={502}
+            height={276}
           />
         </div>
       </div>
