@@ -1,42 +1,51 @@
-.App {
+html, body, .App {
   height: 100%;
 }
 
-.landing-bg {
+.landingBG {
   width: 100%;
   height: 100%;
   position: fixed;
-  background-image: url('./img/small-city.jpg');
+  background-image: url('./img/installation.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-color: black;
 }
 
 .landing {
+  width: 100%;
+  height: 100%;
   position: absolute;
   display: flex;
   flex-wrap: wrap;
   padding: 2rem;
-  margin-bottom: 4rem;
   color: white;
+  background-color: rgba(0,0,0,0.8);
 
-  .landing-left {
-    width: 40%;
+  .landingLeft {
+    width: 38%;
     margin-bottom: 3rem;
     img {
       width: 100%;
+      opacity: 0.7;
     }
   }
 
-  .landing-right {
-    width: 60%;
-    padding: 0 4rem;
+  .landingRight {
+    width: 45%;
+    opacity: 0.7;
+    margin-left: 40px;
+    padding: 0 1em;
+
     h1, h2 {
       font-size: 1.75rem;
     }
     h1 {
       margin-top: 1.25rem;
       margin-bottom: 0.5rem;
+      &:first-child {
+        margin-top: 0;
+      }
     }
     h2 {
       color: #fcb733;
@@ -51,13 +60,13 @@
   }
 
   @media screen and (max-width: 1003px) {
-    .landing-left, .landing-right {
+    .landingLeft, .landingRight {
       width: 100%;
       img {
         max-width: 500px;
       }
     }
-    .landing-right {
+    .landingRight {
       padding: 0;
       h1, h2 {
         font-size: 1.75rem;
@@ -67,7 +76,7 @@
 
   @media screen and (max-width: 320px) {
     padding: 1rem;
-    .landing-right {
+    .landingRight {
       h1, h2 {
         font-size: 1.5rem;
       }
@@ -79,14 +88,14 @@
   @media screen and (min-width: 768px) {
     padding: 4rem;
 
-    .landing-left, .landing-right {
+    .landingLeft, .landingRight {
       width: 100%;
       img {
         max-width: 500px;
       }
     }
 
-    .landing-right {
+    .landingRight {
       padding: 0;
       h1, h2 {
         font-size: 2.25rem;
@@ -94,3 +103,40 @@
     }
   }
 }
+
+.videoWall {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 710px;
+
+  .videoRow {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    &:first-child {
+      padding-right: 2em;
+    }
+
+    .iframeContainer {
+      position: relative;
+      float: left;
+      border-radius: 25px;
+
+      iframe {
+        margin: 0.4em;
+      }
+    }
+
+    .videoLink {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+
