@@ -36,6 +36,10 @@ function App() {
       <div className="videoWall">
 
         <div className="videoRow">
+          <p>Click screen to turn audio on & off</p>
+        </div>
+
+        <div className="videoRow">
           <Video
             url="https://player.vimeo.com/video/286610881"
             width={380}

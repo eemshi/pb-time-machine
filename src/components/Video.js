@@ -2,7 +2,6 @@ import React, { useRef, useState } from 'react';
 import '../App.scss';
 import ReactPlayer from 'react-player';
 import { Icon, Modal } from 'antd';
-import 'antd/dist/antd.css';
 
 const Video = ({url, width, height}) => {
 
